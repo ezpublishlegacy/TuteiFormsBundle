@@ -1,0 +1,3 @@
+tutei_forms_homepage:
+    pattern:  /tutei/forms/{locationId}
+    defaults: { _controller: TuteiFormsBundle:Default:index }
