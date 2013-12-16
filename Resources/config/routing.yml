@@ -1,3 +1,7 @@
 tutei_forms_homepage:
     pattern:  /tutei/forms/{locationId}
     defaults: { _controller: TuteiFormsBundle:Default:index }
+    
+tutei_forms_process:
+    pattern: /tutei/forms_process/{token}
+    defaults: { _controller: TuteiFormsBundle:Default:process }

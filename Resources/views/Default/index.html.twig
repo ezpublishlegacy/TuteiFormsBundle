@@ -1,4 +1,10 @@
+{% extends noLayout is defined ? viewbaseLayout : "TuteiBaseBundle::pagelayout.html.twig" %}
+
+{% block content %}
+
 <form action="{{path( 'tutei_forms_homepage', {locationId:locationId} )}}" method="post" {{ form_enctype(form) }}>
 {{ form_widget(form) }}
 <input type="submit" />
 </form>
+
+{% endblock %}
